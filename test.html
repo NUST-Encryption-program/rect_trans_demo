@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app>
+ <head>
+  <title> New Document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="js/test.js"></script>
+  <link href="css/test.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+<div id="calculator" style="width:400px"> 
+<div id="calcu-head"><span class="imyeah">? <a href="http://www.baiyangzhicheng.com" target="_blank">注意这里</a></span><h6>矩形</h6></div> 
+<div ng-controller="LearningController">
+	<div ng-repeat="item in learningItems" id="calcu-btn" ng-controller="NewsController"> 
+		<ul> <!--配置按钮--> 
+			<li ng-repeat="item in newsItems" onclick="command({{item.id}})"></li> 
+		</ul> 
+	</div>	
+</div>     
+<div id="calcu-foot"> 
+<span id="note"></span> 
+<span class="welcome">我叫高彦受<a href="http://www.cnblogs.com/imyeah" target="_blank">反馈</a></span> 
+</div>  
+</div> 
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/ngcontroller.js"></script>
+ </body>
+</html>
