@@ -16,7 +16,7 @@
 <div ng-controller="LearningController">
 	<div ng-repeat="item in learningItems" id="calcu-btn" ng-controller="NewsController"> 
 		<ul> <!--配置按钮--> 
-			<li ng-repeat="item in newsItems" onclick="command({{item.id}})"></li> 
+			<li ng-controller="changeCtrl" ng-repeat="itemh in newsItems" style="background:{{color}}" ng-click="click(iteml.id,itemh.id)" >{{finalid}}</li>
 		</ul> 
 	</div>	
 </div>     
