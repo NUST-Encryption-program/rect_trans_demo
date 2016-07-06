@@ -32,3 +32,11 @@ function LearningController($http,$scope) {
             $scope.items.splice(index, 1);
         }
     }
+function changeCtrl($scope)
+{
+	$scope.click = function (lieid,hangid) {
+		tmpid = lieid + hangid
+        $scope.finalid = tmpid.toString()
+		$scope.color = "red"
+    }
+}
