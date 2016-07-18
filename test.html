@@ -14,7 +14,7 @@
 <div id="calculator" style="width:400px"> 
 <div id="calcu-head"><span class="imyeah">? <a href="http://www.baiyangzhicheng.com" target="_blank">注意这里</a></span><h6>矩形</h6></div> 
 <div ng-controller="LearningController">
-	<div ng-repeat="item in learningItems" id="calcu-btn" ng-controller="NewsController"> 
+	<div ng-repeat="iteml in learningItems" id="calcu-btn" ng-controller="NewsController"> 
 		<ul> <!--配置按钮--> 
 			<li ng-controller="changeCtrl" ng-repeat="itemh in newsItems" style="background:{{color}}" ng-click="click(iteml.id,itemh.id)" >{{finalid}}</li>
 		</ul> 
